@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/CPyellow2">
+
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goalo Logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="I am a"
+        android:textSize="26sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/customerBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="60dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/customerImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/customer"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="customer"
+            android:layout_marginTop="50dp"
+            android:background="#C905091C"
+            android:layout_gravity="center"
+            android:paddingHorizontal="30dp"
+            android:paddingBottom="20dp"
+            android:textColor="#fff"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/deliverBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="60dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deliverImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/deliveryboy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/deliverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="driver"
+            android:layout_marginTop="50dp"
+            android:background="#C905091C"
+            android:layout_gravity="center"
+            android:paddingHorizontal="30dp"
+            android:paddingBottom="20dp"
+            android:textColor="#fff"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/transparent_button"
+        android:text="I have an account already. \n Login"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+</RelativeLayout>
