@@ -7,8 +7,9 @@
         <item name="colorYellow2">@color/CPyellow2</item>
         <item name="colorYellow3">@color/CPyellow3</item>
         <item name="colorOrange">@color/CPyellow3</item>
-<!--        <item name="android:windowTranslucentNavigation">false</item>-->
-<!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/CPorange</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

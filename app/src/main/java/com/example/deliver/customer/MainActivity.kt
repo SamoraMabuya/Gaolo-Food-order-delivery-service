@@ -15,20 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        loginText()
-    }
-
-
-    private fun loginText() {
-        val firstSent = SpannableStringBuilder()
-        val login = SpannableString("Log In.")
-        login.setSpan(
-            ForegroundColorSpan(Color.BLUE), 0, 7,
-            Spannable.SPAN_EXCLUSIVE_INCLUSIVE)
-        firstSent.append("I Already have an account. \n")
-        firstSent.append(login)
-        loginText.text = firstSent
-
 
     }
 }

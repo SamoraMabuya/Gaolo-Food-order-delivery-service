@@ -16,9 +16,6 @@
 
     </ImageView>
 
-
-
-
     <TextView
         android:id="@+id/SignUp"
         android:layout_width="wrap_content"
@@ -29,7 +26,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="0dp"
-        android:text="Customer\nSign up"
+        android:text="Customer\nSign Up"
         android:gravity="center"
         android:textColor="#fff"
         android:textSize="25sp"
@@ -65,7 +62,7 @@
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="340dp"
         android:background="@drawable/input"
-        android:hint="Email Address"
+        android:hint="Phone Number"
         android:inputType="textEmailAddress"
         android:textColorHint="#fff"
         android:textColor="#fff">
@@ -89,7 +86,7 @@
         android:textColor="#fff">
     </androidx.appcompat.widget.AppCompatEditText>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/SignUpButton"
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -103,7 +100,8 @@
         android:background="@drawable/registerbtn_resource"
         android:text="Create Account"
         android:textColor="#fff"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/loginText"
@@ -116,11 +114,18 @@
         android:layout_marginTop="549dp"
         android:layout_marginEnd="0dp"
         android:background="@drawable/transparent_button"
+        android:text="I already have an account.\n Sign in."
         android:clickable="true"
         android:focusable="true"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="#FFFFFF"
         android:gravity="center"/>
+
+
+
+
+
+
 
 
 </RelativeLayout>
