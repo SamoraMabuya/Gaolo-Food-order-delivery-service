@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "388018216856",
+    "firebase_url": "https://goalo-food-order-deliver-app.firebaseio.com",
+    "project_id": "goalo-food-order-deliver-app",
+    "storage_bucket": "goalo-food-order-deliver-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388018216856:android:0f27dd6ce5a87407f2d5ed",
+        "android_client_info": {
+          "package_name": "com.example.deliver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388018216856-dg8j92q6qi579nmk5t3unlnt03q2l83o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD14Jpmec8Q83M7d8WHBCiIfDr8FPiDs8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388018216856-dg8j92q6qi579nmk5t3unlnt03q2l83o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

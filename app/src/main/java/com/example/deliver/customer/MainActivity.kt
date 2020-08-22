@@ -1,5 +1,6 @@
 package com.example.deliver.customer
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        customerBorder.setOnClickListener {
+            startActivity(Intent(this, CustomerSignUp::class.java))
+            finish();
+        }
 
+        CustomerBorder.setOnClickListener {
+            startActivity(Intent(this, CustomerLogIn::class.java))
+            finish();
+
+        }
     }
 }

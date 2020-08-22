@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".customer.ChangePassword"></activity>
         <activity android:name=".customer.Restaurants">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
