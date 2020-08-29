@@ -1,14 +1,7 @@
 package com.example.deliver.customer
 
-import android.graphics.ColorSpace
-import android.icu.util.ULocale
 import android.os.Build
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,9 +17,11 @@ import kotlinx.android.synthetic.main.recycler_view.*
 class Restaurants : AppCompatActivity() {
 
     lateinit var recyclerView: RecyclerView
-    lateinit var ref: DatabaseReference
-    lateinit var sellers: MutableList<Merchants>
+    lateinit var thisRef: DatabaseReference
+//    lateinit var thisAdapter: MutableList<Merchants>
+    lateinit var thisManager: RecyclerView.LayoutManager
     lateinit var adapter: MerchantAdapter
+    private lateinit var thisAdapter: List<Merchants>
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,20 +29,27 @@ class Restaurants : AppCompatActivity() {
         setContentView(R.layout.restaurants)
 
         recyclerView = findViewById(R.id.merchantListing)
-        ref = FirebaseDatabase.getInstance().getReference("Restaurants")
-
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
 
-        sellers = mutableListOf()
+        thisRef = FirebaseDatabase.getInstance().getReference("Restaurants")
 
-        adapter = MerchantAdapter(this, sellers)
-        merchantListing.adapter = adapter
-        merchantListing.layoutManager = LinearLayoutManager(this)
+        adapter = MerchantAdapter(this, thisAdapter)
 
 
-
-
-
-    }
+//        sellers = mutableListOf()
+//
+//        adapter = MerchantAdapter(this, sellers)
+//        merchantListing.adapter = adapter
+//        merchantListing.layoutManager = LinearLayoutManager(this)
+//
+//        val options: FirebaseRecyclerOptions<Merchants> = FirebaseRecyclerOptions.Builder<Merchants>()
+//            .setQuery(query, Merchants::class.java)
+//            .build()
+//
+//        val adapter: FirebaseRecyclerAdapter = FirebaseRecyclerAdapter<Merchants>
+//
+//
+//
+//    }
 }
